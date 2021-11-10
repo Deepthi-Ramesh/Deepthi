@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Innovfide | Deepthi </title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="./Images/logo.png"/>
+                </div> 
+                <nav>
+                    <li><a class="nav-item" href="#">About</a></li>
+                    <li><a class="nav-item" href="#">Services</a></li>
+                    <li><a class="nav-item" href="#">Blog</a></li>
+                    <li><a class="contact nav-item" href="#">Contact</a></li>
+                </nav>
+            </header>
+            <div class="slider">
+                <p id="p1">Contact us</p>
+                <p id="p2">Home > Contact</p>
+            </div>
+            <div class="main-body">
+                <div class="body-1">
+                        <div class="head">
+                            <p>Get in touch with us </p>
+                        </div>
+                        <div id="p3">
+                                Contact us for a Website,Mobile application,Digital marketing or IT support
+                            </p>
+                        </div>
+                        <div class="address">
+                                <img src="Images/address.png"/>
+                                <div id="p4">
+                                    <p id="p5">Innovfide Technologies</p>
+                                    <p>Anulekha,Anurag Nagar,Tulinj</p>
+                                    <p>Nallasopora East</p>
+                                </div>
+                        </div>
+                        <div class="mail">
+                                <img src="Images/email.png"/>
+                                <div class="para">
+                                <p id="p4">
+                                    business@innovfide.com
+                                </p>
+                                </div>
+                        </div>
+                            <div class="phone-logo">
+                                <img src="Images/phone.png"/>
+                                <div class="para">
+                                <p id="p4">
+                                    +91 8767484648
+                                </p> 
+                            </div>
+                            </div>
+                </div>
+                <div class="body-2">
+                        <div class="wrapper">
+                            <div class="firstname">
+                                <label>First Name: <span class="asterisk">*</span></label>
+                                <input type="text" id ="firstname" placeholder="Please enter your First Name"/>
+                                <p id="error"></p>
+                            </div>
+
+                            <div class="lastname">
+                                <label>Last Name: <span  class="asterisk">*</span></label>
+                                <input type="text" id="lastname" placeholder="Please enter your Last Name"/>
+                                <p id="error"></p>
+                            </div>
+                            
+                            <div class="email">
+                                <label>Email : <span  class="asterisk">*</span></label>
+                                <input type="email" id="email" name="email"  placeholder="Please enter your Email"/>
+                                <p id="error"></p>
+                            </div>
+
+                            <div class="phone">
+                                <label >Phone : <span  class="asterisk">*</span></label>
+                                <input type="tel" id="phone" placeholder="Please enter your Phone No."/>
+                                <p id="error"></p>
+                            </div>
+
+                            <div class="phone">
+                                <label>Do you have a website ? <span  class="asterisk">*</span></label>
+                                <div class="radio">
+                                    <div class="yes">
+                                    <input type="radio" id="yes"onclick="validateWebsite();" name="radio"/>
+                                    <label for ="yes">Yes</label>
+                                    </div>
+                                    <div class="no">
+                                    <input type="radio"  id="no" name="radio"/>
+                                    <label for="no">No</label>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="website">
+                                <label for="website">Website URL</label>
+                                <input type="url" id="website"placeholder="Please enter your website URL"/>
+                            </div>
+                            <div class="btn">
+                                <button onclick="app();">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <p>All Rights Reserved | <span class="footer">Innovfide Technologies</span> | 2021</p>
+            </footer>
+            <script src="app.js"></script>
+        </div>
+    </body>
+</html>
